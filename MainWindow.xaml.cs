@@ -150,7 +150,7 @@ namespace Calculator
             {
                 string verh_without_operations = Verh.Text.TrimEnd(new char[] { '-', '+',  '/', '*' });
                 verh_without_operations = verh_without_operations.Replace(",", ".");
-                string for_calc = $"{verh_without_operations}*({Input.Text}/100)";
+                string for_calc = $"{verh_without_operations}*({Input.Text.Replace(",", ".")}/100)";
                 string result = new DataTable().Compute(for_calc, null).ToString();
                 Input.Text = result;
             }
