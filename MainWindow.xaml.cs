@@ -146,11 +146,19 @@ namespace Calculator
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
             // % 
-            if (Verh.Text.Contains("-") || Verh.Text.Contains("+") || Verh.Text.Contains("/") || Verh.Text.Contains("*"))
+            if (Verh.Text.Contains("-") || Verh.Text.Contains("+"))
             {
-                string verh_without_operations = Verh.Text.TrimEnd(new char[] { '-', '+',  '/', '*' });
+                string verh_without_operations = Verh.Text.TrimEnd(new char[] { '-', '+' });
                 verh_without_operations = verh_without_operations.Replace(",", ".");
                 string for_calc = $"{verh_without_operations}*({Input.Text.Replace(",", ".")}/100)";
+                string result = new DataTable().Compute(for_calc, null).ToString();
+                Input.Text = result;
+            }
+            else if (Verh.Text.Contains("/") || Verh.Text.Contains("*"))
+            {
+                string verh_without_operations = Verh.Text.TrimEnd(new char[] { '/', '*' });
+                verh_without_operations = verh_without_operations.Replace(",", ".");
+                string for_calc = $"({Input.Text.Replace(",", ".")}/100)";
                 string result = new DataTable().Compute(for_calc, null).ToString();
                 Input.Text = result;
             }
