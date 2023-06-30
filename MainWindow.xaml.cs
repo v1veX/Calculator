@@ -226,5 +226,16 @@ namespace Calculator
                 M.SelectedIndex = selected_index;
             }
         }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            // Удаление из памяти выбранной ячейки (MD)
+            if (M.SelectedItem != null)
+            {
+                int selected_index = M.SelectedIndex;
+                M.Items.RemoveAt(selected_index);
+                M.SelectedItem = null;
+            }
+        }
     }
 }

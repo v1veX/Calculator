@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Калькулятор" Height="770" Width="571">
+        Title="Калькулятор" Height="803" Width="591">
     <Grid Width="NaN" Margin="0,0,0,0" Background="#ededed">
-        <Grid Margin="48,0,49,536">
+        <Grid Margin="48,0,49,569">
             <TextBlock x:Name="Verh" Margin="0,44,0,133" TextWrapping="Wrap" Height="41" TextAlignment="Right" FontSize="16" RenderTransformOrigin="0.502,0.469" FontFamily="Unispace"/>
             <TextBlock x:Name="Input" Margin="0,109,0,33" TextWrapping="Wrap" Height="76" FontSize="38" TextAlignment="Right" Text="0" FontFamily="Unispace"/>
         </Grid>
-        <Button Content="MC" Background="Transparent" BorderThickness="0" Margin="20,188,417,459" Height="48" Width="77" FontSize="20" Click="Button_Click_14" TextBlock.FontFamily="Unispace"/>
-        <Button Content="MR" Background="Transparent" BorderThickness="0" Margin="102,188,334,459" Height="48" Width="78" FontSize="20" Click="Button_Click_13" TextBlock.FontFamily="Unispace"/>
-        <Button Content="M+" Background="Transparent" BorderThickness="0" Margin="185,188,259,459" Height="48" Width="70" FontSize="20" Click="Button_Click_15" TextBlock.FontFamily="Unispace"/>
-        <Button Content="M-" Background="Transparent" BorderThickness="0" Margin="260,188,179,459" Height="48" Width="75" FontSize="20" Click="Button_Click_16" TextBlock.FontFamily="Unispace"/>
-        <Button Content="MS" Background="Transparent" BorderThickness="0" Margin="340,188,101,459" Height="48" Width="73" FontSize="20"  Click="Button_Click_12" TextBlock.FontFamily="Unispace"/>
+        <Button Content="MC" Background="Transparent" BorderThickness="0" Margin="48,210,462,496" Height="48" Width="61" FontSize="20" Click="Button_Click_14" TextBlock.FontFamily="Unispace"/>
+        <Button Content="MR" Background="Transparent" BorderThickness="0" Margin="114,210,396,496" Height="48" Width="61" FontSize="20" Click="Button_Click_13" TextBlock.FontFamily="Unispace"/>
+        <Button Content="M+" Background="Transparent" BorderThickness="0" Margin="180,210,330,496" Height="48" Width="61" FontSize="20" Click="Button_Click_15" TextBlock.FontFamily="Unispace"/>
+        <Button Content="M-" Background="Transparent" BorderThickness="0" Margin="246,210,264,496" Height="48" Width="61" FontSize="20" Click="Button_Click_16" TextBlock.FontFamily="Unispace"/>
+        <Button Content="MS" Background="Transparent" BorderThickness="0" Margin="312,210,198,496" Height="48" Width="61" FontSize="20"  Click="Button_Click_12" TextBlock.FontFamily="Unispace"/>
+        <Button Content="MD" Background="Transparent" BorderThickness="0" Margin="378,210,132,496" Height="48" Width="61" FontSize="20" TextBlock.FontFamily="Unispace" Click="Button_Click_17"/>
         <Button Content="%" BorderThickness="0" Margin="20,254,384,375" Height="66" Width="110" Click="Button_Click_11" FontSize="20" Background="#FFE4E4E4" TextBlock.FontFamily="Unispace"/>
         <Button Content="CE" BorderThickness="0" Margin="141,254,263,375" Height="66" Width="110" Click="Button_Click" FontSize="20" Background="#FFE4E4E4" TextBlock.FontFamily="Unispace"/>
-        <Button Content="C" BorderThickness="0" Margin="263,254,141,375" Height="66" Width="110" Click="Button_Click_1" FontSize="20" Background="#FFE4E4E4" TextBlock.FontFamily="Unispace"/>
+        <Button Content="C" BorderThickness="0" Margin="263,254,141,375" Height="66" Width="110" Click="Button_Click_1" FontSize="20" TextBlock.FontFamily="Unispace" Background="#FFE4E4E4"/>
         <Button Content="⌫" BorderThickness="0" Margin="384,254,20,375" Height="66" Width="110" Click="Button_Click_3" FontSize="20" Background="#FFE4E4E4" TextBlock.FontFamily="Unispace"/>
         <Button Content="1/x" BorderThickness="0" Margin="20,325,384,304" Height="66" Width="110" Click="Button_Click_7" FontSize="20" Background="#FFE4E4E4" TextBlock.FontFamily="Unispace"/>
         <Button Content="x&#179;" BorderThickness="0" Margin="141,325,263,304" Height="66" Width="110" Click="Button_Click_8" FontSize="20" Background="#FFE4E4E4" FontFamily="Impact" TextBlock.FontFamily="Unispace"/>
@@ -40,6 +41,6 @@
         <Button Content="0" Background="#fff" BorderThickness="0" Margin="141,609,263,20" Height="66" Width="110" Click="Button_Click_2" FontSize="20" TextBlock.FontFamily="Unispace"/>
         <Button Content="," Background="#fff" BorderThickness="0" Margin="263,609,141,20" Height="66" Width="110" Click="Button_Click_5" FontSize="20" TextBlock.FontFamily="Unispace"/>
         <Button Content="=" Background="#f79102" Foreground="#fff" BorderThickness="0" Margin="384,609,20,20" Height="66" Width="110" Click="Button_Click_6" FontSize="20" TextBlock.FontFamily="Unispace"/>
-        <ComboBox x:Name="M" BorderThickness="0" Margin="418,188,20,459" Width="76" Height="48" FontSize="16" TextBlock.FontFamily="Unispace"/>
+        <ComboBox x:Name="M" BorderThickness="0" Margin="446,210,49,496" Width="76" Height="48" FontSize="16" TextBlock.FontFamily="Unispace"/>
     </Grid>
 </Window>
